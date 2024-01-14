@@ -25,3 +25,11 @@ jobs:
         run: |
           ls -lR /
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List all file in the repo
+        run: |
+          ls -lR ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
