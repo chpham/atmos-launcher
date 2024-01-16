@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: List files in the root directory
         run: |
-          ls -lR /
+          ls -lR /home
       - run: echo "🍏 This job's status is ${{ job.status }}."
   
   job3:
